@@ -1,0 +1,16 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+footer {
+    background-color: #1D1D1D;
+}
+
+a:link, a:visited {
+    color: #ffff81;
+}
+
+
+/*font-family: 'Roboto Condensed', sans-serif;*/
