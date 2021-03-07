@@ -5,11 +5,23 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Space Mono', monospace;
+    background-color: #000000;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
     width: 100%;
+    background-color: #2C2C2C;
+}
+
+a:link, a:visited {
+    color: #ffff81;
 }
 
 
