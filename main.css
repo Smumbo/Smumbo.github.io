@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+
+/*font-family: 'Roboto Condensed', sans-serif;*/
