@@ -8,7 +8,6 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     transition-duration: 0.5s;
-    transition-timing-function: ease;
 }
 
 footer {
