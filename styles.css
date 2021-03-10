@@ -15,3 +15,11 @@ footer {
     width: 100%;
     padding: 16px;
 }
+
+.footer-credits {
+    margin: 15px;
+
+
+    font-size: 11pt;
+    font-family: 'Roboto Condensed', sans-serif;
+}
