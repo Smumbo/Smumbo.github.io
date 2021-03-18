@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Smumbo-Icons';
-  src:  url('fonts/Smumbo-Icons.eot?newdt6');
-  src:  url('fonts/Smumbo-Icons.eot?newdt6#iefix') format('embedded-opentype'),
-    url('fonts/Smumbo-Icons.ttf?newdt6') format('truetype'),
-    url('fonts/Smumbo-Icons.woff?newdt6') format('woff'),
-    url('fonts/Smumbo-Icons.svg?newdt6#Smumbo-Icons') format('svg');
+  src:  url('fonts/Smumbo-Icons.eot?r58mio');
+  src:  url('fonts/Smumbo-Icons.eot?r58mio#iefix') format('embedded-opentype'),
+    url('fonts/Smumbo-Icons.ttf?r58mio') format('truetype'),
+    url('fonts/Smumbo-Icons.woff?r58mio') format('woff'),
+    url('fonts/Smumbo-Icons.svg?r58mio#Smumbo-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,13 +25,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-change_theme:before {
+.icon-change-theme:before {
   content: "\e900";
 }
-.icon-diamond_fill:before {
+.icon-diamond-fill:before {
   content: "\e901";
 }
-.icon-diamond_outline:before {
+.icon-diamond-outline:before {
   content: "\e902";
 }
 .icon-iconmonstr-email-12:before {
@@ -46,15 +46,15 @@
 .icon-iconmonstr-phone-1:before {
   content: "\e906";
 }
-.icon-social_github:before {
+.icon-social-github:before {
   content: "\e907";
 }
-.icon-social_handshake:before {
+.icon-social-handshake:before {
   content: "\e908";
 }
-.icon-social_itch:before {
+.icon-social-itch:before {
   content: "\e909";
 }
-.icon-social_linkedin:before {
+.icon-social-linkedin:before {
   content: "\e90a";
 }

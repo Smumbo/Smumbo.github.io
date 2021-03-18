@@ -23,6 +23,11 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.social-icons {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 .social-icon {
-    height: 64px;
+    font-size: 56px;
 }
