@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    makeThemeButton('theme', 'theme-toggle',
-                    'theme-dark.css', 'theme-light.css');
+    makeThemeButton('theme', 'theme-toggle', 'css/theme-dark.css',
+                    'css/theme-light.css');
 });
 
 var makeThemeButton = function(themeLink, buttonClass, darkFile, lightFile) {

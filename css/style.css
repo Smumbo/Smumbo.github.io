@@ -17,9 +17,12 @@ footer {
 }
 
 .footer-credits {
-    margin: 15px;
-
+    margin-top: 16px;
 
     font-size: 11pt;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.social-icon {
+    height: 64px;
 }

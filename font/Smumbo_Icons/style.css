@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Smumbo-Icons';
+  src:  url('fonts/Smumbo-Icons.eot?newdt6');
+  src:  url('fonts/Smumbo-Icons.eot?newdt6#iefix') format('embedded-opentype'),
+    url('fonts/Smumbo-Icons.ttf?newdt6') format('truetype'),
+    url('fonts/Smumbo-Icons.woff?newdt6') format('woff'),
+    url('fonts/Smumbo-Icons.svg?newdt6#Smumbo-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Smumbo-Icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-change_theme:before {
+  content: "\e900";
+}
+.icon-diamond_fill:before {
+  content: "\e901";
+}
+.icon-diamond_outline:before {
+  content: "\e902";
+}
+.icon-iconmonstr-email-12:before {
+  content: "\e903";
+}
+.icon-iconmonstr-link-1:before {
+  content: "\e904";
+}
+.icon-iconmonstr-linkedin-1:before {
+  content: "\e905";
+}
+.icon-iconmonstr-phone-1:before {
+  content: "\e906";
+}
+.icon-social_github:before {
+  content: "\e907";
+}
+.icon-social_handshake:before {
+  content: "\e908";
+}
+.icon-social_itch:before {
+  content: "\e909";
+}
+.icon-social_linkedin:before {
+  content: "\e90a";
+}
