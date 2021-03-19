@@ -4,6 +4,10 @@ body {
     transition-duration: 0.5s;
 }
 
+a:link, a:visited {
+    color: #404040;
+}
+
 .theme-toggle {
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -16,6 +20,6 @@ footer {
     background-color: #f2f2f2;
 }
 
-.social-icon {
-    fill: #404040;
+.icon-social, .icon-social:visited {
+    color: #ffbf00;
 }

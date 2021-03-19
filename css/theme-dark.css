@@ -1,18 +1,17 @@
 body {
     background-color: #000000;
     color: #FFFFFF;
-    transition-duration: 0.5s;
 }
 
 a:link, a:visited {
-    color: #ffbf00;
+    color: #acacac;
 }
 
 .theme-toggle {
     color: #ffffff;
 }
 
-.social-icon {
+.icon-social, .icon-social:visited {
     color: #ffbf00;
 }
 
