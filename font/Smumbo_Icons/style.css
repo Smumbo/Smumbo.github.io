@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Smumbo-Icons';
-  src:  url('fonts/Smumbo-Icons.eot?r58mio');
-  src:  url('fonts/Smumbo-Icons.eot?r58mio#iefix') format('embedded-opentype'),
-    url('fonts/Smumbo-Icons.ttf?r58mio') format('truetype'),
-    url('fonts/Smumbo-Icons.woff?r58mio') format('woff'),
-    url('fonts/Smumbo-Icons.svg?r58mio#Smumbo-Icons') format('svg');
+  src:  url('fonts/Smumbo-Icons.eot?fqdagb');
+  src:  url('fonts/Smumbo-Icons.eot?fqdagb#iefix') format('embedded-opentype'),
+    url('fonts/Smumbo-Icons.ttf?fqdagb') format('truetype'),
+    url('fonts/Smumbo-Icons.woff?fqdagb') format('woff'),
+    url('fonts/Smumbo-Icons.svg?fqdagb#Smumbo-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-change-theme:before {
+.icon-theme-toggle:before {
   content: "\e900";
 }
 .icon-diamond-fill:before {

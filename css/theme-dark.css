@@ -4,14 +4,18 @@ body {
     transition-duration: 0.5s;
 }
 
-footer {
-    background-color: #1D1D1D;
-}
-
 a:link, a:visited {
     color: #ffbf00;
 }
 
+.theme-toggle {
+    color: #ffffff;
+}
+
 .social-icon {
     color: #ffbf00;
+}
+
+footer {
+    background-color: #1D1D1D;
 }

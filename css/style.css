@@ -7,6 +7,31 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+button:focus {
+    outline: none;
+}
+
+.theme-toggle {
+    display: inline-block;
+    float: right;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    font-size: 48px;
+    width: 64px;
+    height: 64px;
+    padding: 0px;
+}
+
+.social-icons {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.social-icon {
+    font-size: 56px;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -23,11 +48,3 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.social-icons {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.social-icon {
-    font-size: 56px;
-}
