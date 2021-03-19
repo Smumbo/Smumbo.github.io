@@ -3,6 +3,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+h1 {
+    text-align: center;
+    margin: 32px;
+}
+
 body {
     font-family: 'Space Mono', monospace;
 }
@@ -13,7 +18,9 @@ button:focus {
 
 .theme-toggle {
     display: inline-block;
-    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
     background-color: #ffffff00;
     border: none;
     cursor: pointer;
@@ -21,6 +28,11 @@ button:focus {
     width: 64px;
     height: 64px;
     padding: 0px;
+}
+
+.content {
+    margin: auto;
+    width: 50%;
 }
 
 .social-icons {
