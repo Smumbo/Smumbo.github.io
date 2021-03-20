@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
@@ -5,12 +10,29 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
-    margin: 32px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
     font-family: 'Space Mono', monospace;
     transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 button:focus {
@@ -18,46 +40,70 @@ button:focus {
 }
 
 .theme-toggle {
-    display: inline-block;
     top: 0;
     right: 0;
-    position: absolute;
+    margin: 0.2em;
+    position: fixed;
     background-color: #ffffff00;
     border: none;
     cursor: pointer;
-    font-size: 48px;
-    width: 64px;
-    height: 64px;
-    padding: 0px;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+}
+
+#top-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-column {
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+}
+
+#portrait {
+    max-width: 75%;
+    max-height: 75%;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .content {
     margin: auto;
     width: 50%;
+    overflow: auto;
+    flex: 1 0 auto;
 }
 
 .social-icons {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .icon-social {
     text-decoration: none;
-    font-size: 56px;
+    font-size: 3em;
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    box-sizing: border-box;
     text-align: center;
     width: 100%;
-    padding: 16px;
+    padding: 1em;
+    flex-shrink: 0;
 }
 
 .footer-credits {
-    margin-top: 16px;
+    margin-top: 1.2em;
 
-    font-size: 11pt;
+    font-size: 0.9em;
     font-family: 'Roboto Condensed', sans-serif;
 }
