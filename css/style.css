@@ -55,7 +55,6 @@ button:focus {
 
 #top-column-2 {
     width: 60%;
-    padding: 3em;
     border-left: 0.3em solid #ffbf00;
 }
 
@@ -65,6 +64,7 @@ button:focus {
     align-items: center;
     position: relative;
     width: 50%;
+    padding: 2.5em;
 }
 
 #portrait {
@@ -96,7 +96,7 @@ button:focus {
 
 .icon-social {
     text-decoration: none;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 footer {
@@ -105,6 +105,7 @@ footer {
     width: 100%;
     padding: 1em;
     flex-shrink: 0;
+    margin-top: 2em;
 }
 
 .footer-credits {
