@@ -56,14 +56,18 @@ button:focus {
 }
 
 #portrait {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 80%;
+    max-height: 80%;
     position: absolute;
     margin: 0;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    filter: saturate(0%) contrast(130%);
+    -webkit-filter: saturate(0%) contrast(130%);
+    -moz-filter: saturate(0%) contrast(130%);
 }
 
 .content {
