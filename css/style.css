@@ -6,17 +6,12 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h1 {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 html, body {
@@ -50,11 +45,6 @@ button:focus {
     font-size: 3em;
     width: 1em;
     height: 1em;
-}
-
-#top-columns {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .top-column {
