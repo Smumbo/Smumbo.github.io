@@ -63,7 +63,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
+    width: auto;
     padding: 2.5em;
 }
 
