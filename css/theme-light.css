@@ -16,10 +16,10 @@ a:link, a:visited {
     transform: scale(-1, 1);
 }
 
-footer {
-    background-color: #f2f2f2;
+a.icon-social, a.icon-social:visited {
+    color: #ffbf00;
 }
 
-.icon-social, .icon-social:visited {
-    color: #ffbf00;
+footer {
+    background-color: #f2f2f2;
 }

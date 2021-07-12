@@ -11,7 +11,7 @@ a:link, a:visited {
     color: #ffffff;
 }
 
-.icon-social, .icon-social:visited {
+a.icon-social, a.icon-social:visited {
     color: #ffbf00;
 }
 
