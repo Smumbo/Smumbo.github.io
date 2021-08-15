@@ -14,6 +14,7 @@ a:link, a:visited {
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
+    color: #000000;
 }
 
 a.icon-social, a.icon-social:visited {
