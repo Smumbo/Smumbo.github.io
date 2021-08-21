@@ -3,7 +3,15 @@
 // theme files
 const THEME_FILE_DARK = "css/theme-dark.css";
 const THEME_FILE_LIGHT = "css/theme-light.css";
-const ACTIVE_THEME = document.getElementById("theme");
+var ACTIVE_THEME = document.getElementById("theme");
+
+// contact links
+const CONTACT_LINK_EMAIL = "mailto:jonahvenglarcik@gmail.com";
+const CONTACT_LINK_PHONE = "tel:+15204195381";
+
+// contact text
+const CONTACT_TEXT_EMAIL = "jonahvenglarcik@gmail.com";
+const CONTACT_TEXT_PHONE = "+1 (520) 419-5381";
 
 // social links
 const SOCIAL_LINK_LINKEDIN = "https://www.linkedin.com/in/jonah-venglarcik/";
@@ -22,7 +30,8 @@ const SOCIAL_ICON_GITHUB = "icon-social-github";
 
 document.addEventListener('DOMContentLoaded', function() {
     makeThemeToggle();
-    addSocialIcons();
+    generateContactArea();
+    //addSocialIcons();
 });
 
 
@@ -72,7 +81,56 @@ var setTheme = function(newTheme) {
 }
 
 
-// SOCIAL ICONS
+// CONTACT
+
+var generateContactArea = function() {
+    var contactDivs = document.getElementsByClassName("contact");
+
+    // add contact area to all contact divs
+    for (var i = 0; i < contactDivs.length; i++) {
+        div = contactDivs[i];
+
+        // email link
+        var email = document.createElement("a")
+        email.setAttribute("href", CONTACT_LINK_EMAIL);
+        email.innerHTML = CONTACT_TEXT_EMAIL;
+
+        // phone link
+        var phone = document.createElement("a");
+        phone.setAttribute("href", CONTACT_LINK_PHONE);
+        phone.innerHTML = CONTACT_TEXT_PHONE;
+
+        // social links
+        var social = makeSocialIcons();
+
+        // add elements to contact div
+        div.appendChild(email);
+        div.appendChild(document.createElement("br"));
+        div.appendChild(phone);
+        div.appendChild(document.createElement("br"));
+        div.appendChild(social);
+    }
+}
+
+// generates a group of social icons
+var makeSocialIcons = function() {
+    var div = document.createElement("div")
+    div.setAttribute("class", "social-icons");
+
+    // create icon links
+    var linkedin = makeSocialIcon(SOCIAL_LINK_LINKEDIN, "LinkedIn", SOCIAL_ICON_LINKEDIN);
+    var handshake = makeSocialIcon(SOCIAL_LINK_HANDSHAKE, "Handshake", SOCIAL_ICON_HANDSHAKE);
+    var itch = makeSocialIcon(SOCIAL_LINK_ITCH, "itch.io", SOCIAL_ICON_ITCH);
+    var github = makeSocialIcon(SOCIAL_LINK_GITHUB, "GitHub", SOCIAL_ICON_GITHUB);
+
+    // add icon links to current social icons div
+    div.appendChild(linkedin);
+    div.appendChild(handshake);
+    div.appendChild(itch);
+    div.appendChild(github);
+
+    return div;
+}
 
 // adds social icon links in set order to all social icon divs
 var addSocialIcons = function() {

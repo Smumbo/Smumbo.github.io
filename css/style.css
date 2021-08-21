@@ -114,6 +114,10 @@ button:focus {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.social-icons > *:not(:last-child) {
+    display: inline-block;
+    margin-right: 0.2em;
+}
 .icon-social {
     text-decoration: none;
     font-size: 3.5em;
