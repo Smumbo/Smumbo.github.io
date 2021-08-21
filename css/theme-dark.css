@@ -6,7 +6,3 @@
     --color-background: #111111;
     --color-surface: #1d1d1d;
 }
-
-.theme-toggle {
-    transition: none;
-}
