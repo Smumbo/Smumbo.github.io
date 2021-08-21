@@ -94,16 +94,16 @@ hr {
     color: var(--color-text-primary);
 }
 
-#top-column-1 {
+#about-portrait {
     width: 40%;
 }
 
-#top-column-2 {
+#about-description {
     border-left: 0.3em solid var(--color-accent);
     width: 60%;
 }
 
-.top-column {
+.about-area {
     position: relative;
 
     display: table-cell;
