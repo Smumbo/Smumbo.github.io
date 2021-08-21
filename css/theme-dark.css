@@ -1,20 +1,12 @@
-body {
-    background-color: #111111;
-    color: #FFFFFF;
-}
-
-a:link, a:visited {
-    color: #acacac;
+:root {
+    color-scheme: dark;
+    --color-accent: #ffbf00;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #acacac;
+    --color-background: #111111;
+    --color-surface: #1d1d1d;
 }
 
 .theme-toggle {
-    color: #ffffff;
-}
-
-a.icon-social, a.icon-social:visited {
-    color: #ffbf00;
-}
-
-footer {
-    background-color: #1D1D1D;
+    transition: none;
 }

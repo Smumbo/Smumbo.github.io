@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
+    transition: color 0.5s ease;
 }
 
 h1 {
@@ -22,14 +24,28 @@ html, body {
 
 body {
     font-family: 'Jost', sans-serif;
-    transition-duration: 0.5s;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
 }
 
 p {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
+    font-size: 1.1em;
+    transition: color 0.5s ease;
+}
+
+a {
+    font-size: 1.1em;
+}
+
+a:link, a:visited {
+    color: var(--color-text-secondary);
+}
+a.icon-social, a.icon-social:visited {
+    color: var(--color-accent);
 }
 
 button:focus {
@@ -41,7 +57,8 @@ button:focus {
     right: 0;
     margin: 0.2em;
     position: fixed;
-    background-color: #ffffff00;
+    background-color: transparent;
+    color: var(--color-text-primary);
     border: none;
     cursor: pointer;
     font-size: 3em;
@@ -55,7 +72,7 @@ button:focus {
 
 #top-column-2 {
     width: 60%;
-    border-left: 0.3em solid #ffbf00;
+    border-left: 0.3em solid var(--color-accent);
 }
 
 .top-column {
@@ -82,10 +99,6 @@ button:focus {
     -moz-filter: saturate(0%) contrast(130%);
 }
 
-.contact-info a {
-    font-family: 'Space Mono', monospace;
-}
-
 .content {
     margin: auto;
     width: 60%;
@@ -93,15 +106,21 @@ button:focus {
     overflow: auto;
     flex: 1 0 auto;
 }
+
+
+/* Social Icons */
+
 .social-icons {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
 .icon-social {
     text-decoration: none;
     font-size: 3.5em;
 }
+
+
+/* Footer */
 
 footer {
     box-sizing: border-box;
@@ -110,7 +129,7 @@ footer {
     padding: 1em;
     flex-shrink: 0;
     margin-top: 2em;
-    
+    background-color: var(--color-surface);
 }
 
 .footer-credits {
@@ -118,4 +137,20 @@ footer {
 
     font-size: 0.9em;
     font-family: 'Jost', sans-serif;
+}
+
+#color1 {
+    color: var(--color-accent)
+}
+#color2 {
+    color: var(--color-text-primary);
+}
+#color3 {
+    color: var(--color-text-secondary);
+}
+#color4 {
+    color: var(--color-background);
+}
+#color5 {
+    color: var(--color-surface);
 }

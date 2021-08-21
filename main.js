@@ -1,11 +1,18 @@
+const darkFile = "css/theme-dark.css";
+const lightFile = "css/theme-light.css";
+const activeTheme = document.getElementById("theme");
+
 document.addEventListener('DOMContentLoaded', function() {
-    makeThemeButton('theme', 'theme-toggle', 'css/theme-dark.css',
-                    'css/theme-light.css');
+    makeThemeToggle('theme-toggle');
 });
 
-var makeThemeButton = function(themeLink, buttonClass, darkFile, lightFile) {
+var makeThemeToggle = function(buttonClass) {
     var buttons = document.getElementsByClassName(buttonClass);
-    var theme = document.getElementById(themeLink)
+    var currTheme = localStorage.getItem("theme");
+
+    // set initial page theme based on user's stored preferred theme
+    currTheme = localStorage.getItem("theme");
+    setTheme(currTheme);
 
     // add listener to any/all theme toggle buttons
     for (var i = 0; i < buttons.length; i++) {
@@ -13,13 +20,29 @@ var makeThemeButton = function(themeLink, buttonClass, darkFile, lightFile) {
 
         // add listener to current button
         button.addEventListener('click', function() {
-            if (theme.getAttribute("href") == darkFile) {
-                // If current theme is dark, change to light
-                theme.href = lightFile;
-            } else {
-                // If current theme is light, change to dark
-                theme.href = darkFile;
-            }
+            // get current theme and toggle to opposite
+            currTheme = localStorage.getItem("theme");
+            toggleTheme(currTheme);
         });
+    }
+}
+
+var toggleTheme = function(currentTheme) {
+    // toggle theme to opposite of current theme
+    if (currentTheme == "dark") {
+        setTheme("light");
+    } else {
+        setTheme("dark")
+    }
+}
+
+var setTheme = function(newTheme) {
+    // set theme to given theme
+    if (newTheme == "dark") {
+        activeTheme.href = darkFile;
+        localStorage.setItem("theme", "dark");
+    } else {
+        activeTheme.href = lightFile;
+        localStorage.setItem("theme", "light");
     }
 }
