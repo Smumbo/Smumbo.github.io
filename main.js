@@ -3,7 +3,6 @@
 // theme files
 const THEME_FILE_DARK = "css/theme-dark.css";
 const THEME_FILE_LIGHT = "css/theme-light.css";
-var ACTIVE_THEME = document.getElementById("theme");
 
 // contact links
 const CONTACT_LINK_EMAIL = "mailto:jonahvenglarcik@gmail.com";
@@ -38,11 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // add functionality to theme toggle button
 var makeThemeToggle = function() {
+    var activeTheme = document.getElementById("theme");
     var currTheme = localStorage.getItem("theme");
 
     // set initial page theme based on user's stored preferred theme
     currTheme = localStorage.getItem("theme");
-    setTheme(currTheme);
+    setTheme(activeTheme, currTheme);
 
     // add listener to any/all theme toggle buttons
     var buttons = document.getElementsByClassName("theme-toggle");
@@ -52,29 +52,29 @@ var makeThemeToggle = function() {
         // add listener to current button
         button.addEventListener('click', function() {
             // get current theme and toggle to opposite
-            ACTIVE_THEME = document.getElementById("theme");
+            activeTheme = document.getElementById("theme");
             currTheme = localStorage.getItem("theme");
-            toggleTheme(currTheme);
+            toggleTheme(activeTheme, currTheme);
         });
     }
 }
 
 // toggle theme to opposite of current theme
-var toggleTheme = function(currentTheme) {
+var toggleTheme = function(activeTheme, currentTheme) {
     if (currentTheme == "dark") {
-        setTheme("light");
+        setTheme(activeTheme, "light");
     } else {
-        setTheme("dark")
+        setTheme(activeTheme, "dark")
     }
 }
 
 // set theme to given theme
-var setTheme = function(newTheme) {
+var setTheme = function(activeTheme, newTheme) {
     if (newTheme == "dark") {
-        ACTIVE_THEME.href = THEME_FILE_DARK;
+        activeTheme.href = THEME_FILE_DARK;
         localStorage.setItem("theme", "dark");
     } else {
-        ACTIVE_THEME.href = THEME_FILE_LIGHT;
+        activeTheme.href = THEME_FILE_LIGHT;
         localStorage.setItem("theme", "light");
     }
 }
