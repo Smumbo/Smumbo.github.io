@@ -62,6 +62,12 @@ a.icon-social, a.icon-social:visited {
     color: var(--color-accent);
 }
 
+td {
+    position: relative;
+
+    padding: 2.5em;
+}
+
 hr {
     margin: auto;
     margin-top: 3em;
@@ -97,12 +103,6 @@ hr {
 #about-description {
     border-left: 0.3em solid var(--color-accent);
     width: 60%;
-}
-
-.about-area {
-    position: relative;
-
-    padding: 2.5em;
 }
 
 #portrait {
