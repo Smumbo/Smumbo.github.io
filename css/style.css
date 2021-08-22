@@ -79,6 +79,64 @@ hr {
     background-color: var(--color-text-tertiary);
 }
 
+footer {
+    margin-top: 2em;
+    padding: 1em;
+
+    background-color: var(--color-surface);
+
+    text-align: center;
+}
+
+
+/* REUSABLE STYLES */
+
+.content {
+    flex: 1 0 auto;
+
+    overflow: auto;
+
+    margin: auto;
+    width: 60%;
+    max-width: 1280px;
+}
+
+.social-icons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.social-icons > *:not(:last-child) {
+    display: inline-block;
+
+    margin-right: 0.2em;
+}
+.icon-social {
+    font-size: 3.5em;
+    text-decoration: none;
+}
+
+.footer-credits {
+    margin-top: 1.2em;
+
+    font-size: 0.9em;
+    font-family: 'Jost', sans-serif;
+}
+#color1 {
+    color: var(--color-accent)
+}
+#color2 {
+    color: var(--color-text-primary);
+}
+#color3 {
+    color: var(--color-text-secondary);
+}
+#color4 {
+    color: var(--color-background);
+}
+#color5 {
+    color: var(--color-surface);
+}
+
 .theme-toggle {
     position: fixed;
     top: 0;
@@ -96,6 +154,9 @@ hr {
     color: var(--color-text-primary);
 }
 
+
+/* PAGE-SPECIFIC STYLES */
+
 #about-portrait {
     width: 40%;
 }
@@ -104,7 +165,6 @@ hr {
     border-left: 0.3em solid var(--color-accent);
     width: 60%;
 }
-
 #portrait {
     position: absolute;
     top: 50%;
@@ -121,64 +181,5 @@ hr {
     max-height: 80%;
 }
 
-.content {
-    flex: 1 0 auto;
-
-    overflow: auto;
-
-    margin: auto;
-    width: 60%;
-    max-width: 1280px;
-}
 
 
-/* Social Icons */
-
-.social-icons {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.social-icons > *:not(:last-child) {
-    display: inline-block;
-
-    margin-right: 0.2em;
-}
-.icon-social {
-    font-size: 3.5em;
-    text-decoration: none;
-}
-
-
-/* Footer */
-
-footer {
-    margin-top: 2em;
-    padding: 1em;
-
-    background-color: var(--color-surface);
-
-    text-align: center;
-}
-
-.footer-credits {
-    margin-top: 1.2em;
-
-    font-size: 0.9em;
-    font-family: 'Jost', sans-serif;
-}
-
-#color1 {
-    color: var(--color-accent)
-}
-#color2 {
-    color: var(--color-text-primary);
-}
-#color3 {
-    color: var(--color-text-secondary);
-}
-#color4 {
-    color: var(--color-background);
-}
-#color5 {
-    color: var(--color-surface);
-}
