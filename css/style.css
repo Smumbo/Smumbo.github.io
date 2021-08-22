@@ -13,7 +13,6 @@
 html, body {
     height: 100%;
 }
-
 body {
     flex-direction: column;
 
@@ -34,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }
-
 h1 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -54,7 +52,6 @@ p {
 a {
     font-size: 1.1em;
 }
-
 a:link, a:visited {
     color: var(--color-text-secondary);
 }
@@ -90,6 +87,23 @@ footer {
 
 
 /* REUSABLE STYLES */
+
+.theme-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin: 0.2em;
+    border: none;
+    width: 1em;
+    height: 1em;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    font-size: 3em;
+    color: var(--color-text-primary);
+}
 
 .content {
     flex: 1 0 auto;
@@ -137,30 +151,12 @@ footer {
     color: var(--color-surface);
 }
 
-.theme-toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    margin: 0.2em;
-    border: none;
-    width: 1em;
-    height: 1em;
-
-    background-color: transparent;
-    cursor: pointer;
-
-    font-size: 3em;
-    color: var(--color-text-primary);
-}
-
 
 /* PAGE-SPECIFIC STYLES */
 
 #about-portrait {
     width: 40%;
 }
-
 #about-description {
     border-left: 0.3em solid var(--color-accent);
     width: 60%;
@@ -180,6 +176,3 @@ footer {
     max-width: 80%;
     max-height: 80%;
 }
-
-
-
