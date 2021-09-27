@@ -1,0 +1,14 @@
+
+.icon-contact-linkedin:before { content: '\e800'; } /* '' */
+.icon-contact-phone:before { content: '\e801'; } /* '' */
+.icon-diamond-black:before { content: '\e802'; } /* '' */
+.icon-diamond-fill:before { content: '\e803'; } /* '' */
+.icon-diamond-white:before { content: '\e804'; } /* '' */
+.icon-download:before { content: '\e805'; } /* '' */
+.icon-social-github:before { content: '\e806'; } /* '' */
+.icon-social-handshake:before { content: '\e807'; } /* '' */
+.icon-social-itch:before { content: '\e808'; } /* '' */
+.icon-social-linkedin:before { content: '\e809'; } /* '' */
+.icon-theme-toggle:before { content: '\e80a'; } /* '' */
+.icon-contact-email:before { content: '\e80b'; } /* '' */
+.icon-contact-link:before { content: '\e80c'; } /* '' */
