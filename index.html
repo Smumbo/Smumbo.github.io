@@ -3,7 +3,7 @@
     <head>
         <!-- Metadata -->
         <meta charset="ISO-8859-1">
-        <title>Jonah Venglarcik</title>
+        <title>About - Jonah Venglarcik</title>
         <meta name="description" content="Jonah Venglarcik's personal website/portfolio">
         <meta name="keywords" content="HTML, meta tag, tag reference, UI, UX, game dev, CSS, JavaScript, Jonah Venglarcik, jvenglarcik, jonahvenglarcik, design, UI design, UX design, UI/UX design, UX/UI design">
         <meta name="author" content="Jonah Venglarcik">
@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Jost:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-        <link rel="stylesheet" href="fonts/Smumbo_Icons/style.css">
+        <link rel="stylesheet" href="fonts/smumbo-icons/css/smumbo-icons.css"
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico?" type="images/x-icon">
@@ -29,7 +29,7 @@
 
     <body>
         <h1>Jonah Venglarcik</h1>
-        <button class="theme-toggle"><span class="icon-theme-toggle"></span></button>
+        <button class="theme-toggle"><i class="icon-theme-toggle"></i></button>
         <div class="content">
             <table>
                 <tr>
@@ -51,19 +51,31 @@
                 </tr>
             </table>
             <hr>
-            <!--<table>
+            <table>
                 <tr>
-                    <td>
-                        <h3>Resume</h3>
+                    <td class="about-downloads" id="about-resume">
+                        <h2>My resume</h2>
+                        <a href="resources/JonahVenglarcikResume2021.pdf"><img class="preview" src="resources/PreviewResume.png"></a>
+                        <figcaption>Updated: 9/20/2021</figcaption>
+                        <a href="resources/JonahVenglarcikResume2021.pdf" download class="button main-download" target="_blank">Download (PDF) <span class="icon-download"></span></a>
+                        <br><p>An additional "robot-friendly" version has been provided for use with automated resume processing systems:</p>
+                        <a href="resources/JonahVenglarcikResume2021-RobotFriendly.docx" download target="_blank">Download (DOCX)</a><br>
+                        <a href="resources/JonahVenglarcikResume2021-RobotFriendly.pdf" download target="_blank">Download (PDF)</a>
                     </td>
-                    <td>
-                        <h3>CV</h3>
+                    <td class="about-downloads" id="about-cv">
+                        <h2>My CV</h2>
+                        <a href="resources/JonahVenglarcikCV2021.pdf"><img class="preview" src="resources/PreviewCV.png"></a>
+                        <figcaption>Updated: 9/26/2021</figcaption>
+                        <a href="resources/JonahVenglarcikCV2021.pdf" download class="button main-download" target="_blank">Download (PDF) <span class="icon-download"></span></a>
                     </td>
-                    <td>
-                        <h3>Business Card</h3>
+                    <td class="about-downloads" id="about-card">
+                        <h2>My card</h2>
+                        <a href="resources/JonahVenglarcikCard2021.pdf"><img class="preview" src="resources/PreviewCard.png"></a>
+                        <figcaption>Updated: 8/21/2021</figcaption>
+                        <a href="resources/JonahVenglarcikCard2021.pdf" download class="button main-download" target="_blank">Download (PDF) <span class="icon-download"></span></a>
                     </td>
                 </tr>
-            </table>-->
+            </table>
         </div>
 
         <footer>
@@ -71,18 +83,18 @@
             <div class="footer-credits">
                 This website was designed and implemented by Jonah Venglarcik.<br>
                 Hosting provided by <a href="https://pages.github.com">GitHub Pages</a>.<br>
-                Icon font generated on <a href="https://icomoon.io/">IcoMoon</a>.<br>
+                Icon font generated on <a href="https://fontello.com">Fontello</a>.<br>
                 Some icons from <a href="https://iconmonstr.com">iconmonstr</a>.<br>
                 Fonts from <a href="https://fonts.google.com/share?selection.family=Josefin%20Sans:ital,wght@0,700;1,700%7CJost:ital,wght@0,400;0,700;1,400;1,700%7CSpace%20Mono:ital,wght@0,400;0,700;1,400;1,700">
                 Google Fonts</a>.<br>
             </div>
             <br>
             <div class="footer-colors">
-                <span id="color1" class="icon-diamond-fill"></span>
-                <span id="color2" class="icon-diamond-fill"></span>
-                <span id="color3" class="icon-diamond-fill"></span>
-                <span id="color4" class="icon-diamond-fill"></span>
-                <span id="color5" class="icon-diamond-fill"></span>
+                <i id="color1" class="icon-diamond-black"></i>
+                <i id="color2" class="icon-diamond-black"></i>
+                <i id="color3" class="icon-diamond-black"></i>
+                <i id="color4" class="icon-diamond-black"></i>
+                <i id="color5" class="icon-diamond-black"></i>
             </div>
         </footer>
     </body>

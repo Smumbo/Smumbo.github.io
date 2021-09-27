@@ -76,6 +76,17 @@ hr {
     background-color: var(--color-text-tertiary);
 }
 
+figcaption {
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+    font-size: 0.9em;
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+
+
 footer {
     margin-top: 2em;
     padding: 1em;
@@ -129,6 +140,31 @@ footer {
     text-decoration: none;
 }
 
+.button {
+    transition: background-color 0.1s, color 0.1s;
+    border: none;
+    padding: 1em;
+
+    box-shadow: inset 0 0 0 0.2em var(--color-accent);
+        -webkit-box-shadow: inset 0 0 0 0.2em var(--color-accent);
+        -moz-box-shadow: inset 0 0 0 0.2em var(--color-accent);
+        -o-box-shadow: inset 0 0 0 0.2em var(--color-accent);
+        -ms-box-shadow: inset 0 0 0 0.2em var(--color-accent);
+    background-color: none;
+    cursor: pointer;
+
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--color-accent) !important;
+}
+.button:hover {
+    transition: background-color 0.1s, color 0.1s;
+    background-color: var(--color-accent);
+    color: var(--color-background) !important;
+}
+
 .footer-credits {
     margin-top: 1.2em;
 
@@ -158,7 +194,7 @@ footer {
     width: 40%;
 }
 #about-description {
-    border-left: 0.3em solid var(--color-accent);
+    border-left: 0.2em solid var(--color-accent);
     width: 60%;
 }
 #portrait {
@@ -175,4 +211,22 @@ footer {
 
     max-width: 80%;
     max-height: 80%;
+}
+
+.about-downloads {
+    padding-top: 0;
+    width: 33%;
+    vertical-align: top;
+    align-items: center;
+}
+.preview {
+    padding: 0;
+    margin: 0;
+    border: 0.2em solid var(--color-surface);
+    max-width: 100%;
+}
+.main-download {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
