@@ -140,7 +140,7 @@ footer {
     text-decoration: none;
 }
 
-.button {
+.button-download {
     transition: background-color 0.1s, color 0.1s;
     border: none;
     padding: 1em;
@@ -155,7 +155,7 @@ footer {
     text-decoration: none;
     color: var(--color-accent) !important;
 }
-.button:hover {
+.button-download:hover {
     transition: background-color 0.1s, color 0.1s;
     background-color: var(--color-accent);
     color: var(--color-background) !important;
