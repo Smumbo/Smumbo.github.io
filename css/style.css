@@ -219,6 +219,7 @@ footer {
     align-items: center;
 }
 .preview {
+    transition: border 0.5s ease;
     padding: 0;
     margin: 0;
     border: 0.2em solid var(--color-surface);
