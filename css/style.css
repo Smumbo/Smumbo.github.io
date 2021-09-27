@@ -177,10 +177,13 @@ footer {
     color: var(--color-text-secondary);
 }
 #color4 {
-    color: var(--color-background);
+    color: var(--color-text-tertiary);
 }
 #color5 {
-    color: var(--color-surface);
+    color: var(--color-background);
+}
+#color6 {
+    color: var(--color-surface)
 }
 
 
