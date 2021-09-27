@@ -137,7 +137,7 @@ var makeSocialIcon = function(link, title, icon) {
     newLink.setAttribute("class", "icon-social")
     newLink.setAttribute("href", link);
 
-    var newIcon = document.createElement("span");
+    var newIcon = document.createElement("i");
     newIcon.setAttribute("class", icon);
     newIcon.setAttribute("title", title);
 
