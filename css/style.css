@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
 
+    box-sizing: border-box;
+
     font-weight: normal;
     font-style: normal;
 }
@@ -216,7 +218,7 @@ footer {
     vertical-align: top;
     align-items: center;
 }
-.preview {
+.document-preview {
     transition: border 0.5s ease;
     padding: 0;
     margin: 0;
