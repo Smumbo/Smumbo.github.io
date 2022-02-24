@@ -141,7 +141,6 @@ footer {
 
 .button-download {
     transition: background-color 0.1s, color 0.1s;
-    border: none;
     padding: 1em;
 
     border: 0.2em solid var(--color-accent);
