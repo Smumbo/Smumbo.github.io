@@ -29,7 +29,7 @@ const SOCIAL_ICON_GITHUB = "icon-social-github";
 
 document.addEventListener('DOMContentLoaded', function() {
     makeThemeToggle();
-    makeFooterColorIcons();
+    //makeFooterColorIcons();
     generateContactArea();
 });
 
