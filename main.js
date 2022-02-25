@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // THEMES
 
 // add functionality to theme toggle button
-var makeThemeToggle = function() {
+function makeThemeToggle() {
     var activeTheme = document.getElementById("theme");
     var currTheme = localStorage.getItem("theme");
 
@@ -60,7 +60,7 @@ var makeThemeToggle = function() {
 }
 
 // toggle theme to opposite of current theme
-var toggleTheme = function(activeTheme, currentTheme) {
+function toggleTheme(activeTheme, currentTheme) {
     if (currentTheme == "dark") {
         setTheme(activeTheme, "light");
     } else {
@@ -80,9 +80,15 @@ var setTheme = function(activeTheme, newTheme) {
 }
 
 
+// FOOTER
+
+// add copy functionality to theme color icons
+
+
+
 // CONTACT
 
-var generateContactArea = function() {
+function generateContactArea() {
     var contactDivs = document.getElementsByClassName("contact");
 
     // add contact area to all contact divs
@@ -112,7 +118,7 @@ var generateContactArea = function() {
 }
 
 // generates a group of social icons
-var makeSocialIcons = function() {
+function makeSocialIcons() {
     var div = document.createElement("div")
     div.setAttribute("class", "social-icons");
 
@@ -132,7 +138,7 @@ var makeSocialIcons = function() {
 }
 
 // creates a new social icon link with the given social platform's info
-var makeSocialIcon = function(link, title, icon) {
+function makeSocialIcon(link, title, icon) {
     var newLink = document.createElement("a");
     newLink.setAttribute("class", "icon-social")
     newLink.setAttribute("href", link);
