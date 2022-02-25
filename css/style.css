@@ -176,8 +176,12 @@ footer {
     font-size: 1em;
     font-family: 'Jost', sans-serif;
 }
+.theme-color-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+}
 #color1 {
-    color: var(--color-accent)
+    color: var(--color-accent);
 }
 #color2 {
     color: var(--color-text-primary);
@@ -190,9 +194,17 @@ footer {
 }
 #color5 {
     color: var(--color-background);
+    text-shadow: 2px 0 0 var(--color-text-tertiary),
+                 0 -2px 0 var(--color-text-tertiary),
+                 0 2px 0 var(--color-text-tertiary),
+                 -2px 0 0 var(--color-text-tertiary);
 }
 #color6 {
-    color: var(--color-surface)
+    color: var(--color-surface);
+    text-shadow: 2px 0 0 var(--color-text-tertiary),
+                 0 -2px 0 var(--color-text-tertiary),
+                 0 2px 0 var(--color-text-tertiary),
+                 -2px 0 0 var(--color-text-tertiary);
 }
 
 
