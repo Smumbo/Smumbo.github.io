@@ -61,10 +61,13 @@ a.icon-social, a.icon-social:visited {
     color: var(--color-accent);
 }
 
-td {
-    position: relative;
+main {
+    flex: 1 0 auto;
 
-    padding: 2.5em;
+    overflow: auto;
+
+    margin: auto;
+    max-width: 1280px;
 }
 
 hr {
@@ -86,8 +89,6 @@ figcaption {
     font-style: italic;
     color: var(--color-text-secondary);
 }
-
-
 
 footer {
     margin-top: 2em;
@@ -116,15 +117,6 @@ footer {
 
     font-size: 3em;
     color: var(--color-text-primary);
-}
-
-.content {
-    flex: 1 0 auto;
-
-    overflow: auto;
-
-    margin: auto;
-    max-width: 1280px;
 }
 
 .flex-container {
@@ -213,7 +205,7 @@ footer {
 #about-portrait {
     width: 40%;
 }
-#about-description {
+#about-intro {
     border-left: 0.2em solid var(--color-accent);
     width: 60%;
 }
