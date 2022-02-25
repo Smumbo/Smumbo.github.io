@@ -84,7 +84,7 @@ var setTheme = function(activeTheme, newTheme) {
     }
 }
 
-
+/*
 // FOOTER
 
 // add clipboard copy functionality to theme color icons
@@ -136,7 +136,7 @@ function addColorIconClipboardCopy(iconElement, themeColorVar) {
         copyText(colorHexShort);
         alert("Copied color to clipboard: " + colorHexShort);
     });
-}
+}*/
 
 
 // CONTACT
