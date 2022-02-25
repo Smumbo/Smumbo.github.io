@@ -29,8 +29,13 @@ const SOCIAL_ICON_GITHUB = "icon-social-github";
 
 document.addEventListener('DOMContentLoaded', function() {
     makeThemeToggle();
+    makeFooterColorIcons();
     generateContactArea();
 });
+
+function copyText(text) {
+    navigator.clipboard.writeText(text);
+}
 
 
 // THEMES
@@ -82,8 +87,56 @@ var setTheme = function(activeTheme, newTheme) {
 
 // FOOTER
 
-// add copy functionality to theme color icons
+// add clipboard copy functionality to theme color icons
+function makeFooterColorIcons() {
+    var icons = document.getElementsByClassName("theme-color-icon");
 
+    // add click listener to all theme color icons
+    for (var i = 0; i < icons.length; i++) {
+        var icon = icons[i];
+
+        // determine icon and the theme color CSS variable associated with it
+        var themeColor;
+        switch (icon.id) {
+            case "color1":
+                themeColor = "--color-accent";
+                break;
+            case "color2":
+                themeColor = "--color-text-primary";
+                break;
+            case "color3":
+                themeColor = "--color-text-secondary";
+                break;
+            case "color4":
+                themeColor = "--color-text-tertiary";
+                break;
+            case "color5":
+                themeColor = "--color-background";
+                break;
+            case "color6":
+                themeColor = "--color-surface";
+                break;
+            default:
+                console.log("Nonexistent theme color icon referenced. Fix this!");
+        }
+
+        // add click listener to current icon
+        addColorIconClipboardCopy(icon, themeColor)
+    }
+}
+
+/// add a click listener to an icon which copies the variable attribute to the clipboard
+function addColorIconClipboardCopy(iconElement, themeColorVar) {
+    iconElement.addEventListener('click', function() {
+        var colorHex = getComputedStyle(document.documentElement).getPropertyValue(themeColorVar);
+       
+        // remove "#" character (many hex color input fields don't like it)
+        var colorHexShort = colorHex.substring(2);
+
+        copyText(colorHexShort);
+        alert("Copied color to clipboard: " + colorHexShort);
+    });
+}
 
 
 // CONTACT
