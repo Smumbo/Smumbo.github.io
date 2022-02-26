@@ -50,18 +50,15 @@ function makeThemeToggle() {
     setTheme(activeTheme, currTheme);
 
     // add listener to any/all theme toggle buttons
-    var buttons = document.getElementsByClassName("theme-toggle");
-    for (var i = 0; i < buttons.length; i++) {
-        button = buttons[i];
+    var button = document.getElementById("theme-toggle");
 
-        // add listener to current button
-        button.addEventListener('click', function() {
-            // get current theme and toggle to opposite
-            activeTheme = document.getElementById("theme");
-            currTheme = localStorage.getItem("theme");
-            toggleTheme(activeTheme, currTheme);
-        });
-    }
+    // add listener to current button
+    button.addEventListener('click', function() {
+        // get current theme and toggle to opposite
+        activeTheme = document.getElementById("theme");
+        currTheme = localStorage.getItem("theme");
+        toggleTheme(activeTheme, currTheme);
+    });
 }
 
 // toggle theme to opposite of current theme

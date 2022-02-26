@@ -106,7 +106,7 @@ footer {
     text-align: center;
 }
 
-.theme-toggle {
+#theme-toggle {
     position: fixed;
     top: 0;
     right: 0;
