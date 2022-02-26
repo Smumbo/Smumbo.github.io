@@ -243,7 +243,6 @@ footer {
 .download-preview {
     position: relative;
     display: block;
-    text-align: center;
 }
 .download-preview:hover > img {
     opacity: 1;
