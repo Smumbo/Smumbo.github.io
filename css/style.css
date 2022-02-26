@@ -233,6 +233,7 @@ footer {
     padding-top: 0;
     vertical-align: top;
     align-items: center;
+    min-width: 33.33%;
 }
 
 .download-preview-container {
