@@ -272,7 +272,7 @@ footer {
     left: 0;
     color: var(--color-text-primary);
 }
-.preview-overlay > span {
+.preview-overlay > p {
     margin: 0 auto;
     line-height: 100%;
     font-size: 2em;
