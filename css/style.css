@@ -241,6 +241,7 @@ footer {
     border: 0.2em solid var(--color-surface);
     margin-bottom: 2em;
 }
+
 .download-preview {
     position: relative;
     display: block;
@@ -253,14 +254,15 @@ footer {
 }
 .download-preview > img {
     position: relative;
-    transition: opacity 0.1s ease;
     max-width: 100%;
     display: block;
     opacity: 0.25;
 }
+.download-preview > * {
+    transition: opacity 0.2s ease;
+}
 
 .preview-overlay {
-    transition: opacity 0.1s ease;
     display: flex;
     align-items: center;
     position: absolute;
