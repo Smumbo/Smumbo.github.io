@@ -210,7 +210,7 @@ footer {
     width: 40%;
 }
 #about-intro {
-    border-left: 0.2em solid var(--color-accent);
+    border-left: 2px solid var(--color-accent);
     width: 60%;
 }
 #portrait {
@@ -238,7 +238,7 @@ footer {
 
 .download-preview-container {
     transition: border 0.5s ease;
-    border: 0.2em solid var(--color-surface);
+    border: 2px solid var(--color-surface);
     margin-bottom: 2em;
 }
 
