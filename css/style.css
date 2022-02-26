@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }
-h1 {
+h1, h2 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 
@@ -82,12 +82,12 @@ hr {
 }
 
 figcaption {
-    margin-top: 0.5em;
-    margin-bottom: 2.5em;
+    margin-top: 1em;
     font-size: 1em;
     font-family: 'Space Mono', monospace;
     font-style: italic;
     color: var(--color-text-secondary);
+    text-align: center;
 }
 
 footer {
@@ -101,6 +101,10 @@ footer {
 
 
 /* REUSABLE STYLES */
+
+.center-text {
+    text-align: center;
+}
 
 .theme-toggle {
     position: fixed;
@@ -146,7 +150,7 @@ footer {
     transition: background-color 0.1s, color 0.1s;
     padding: 1em;
 
-    border: 0.2em solid var(--color-accent);
+    border: 2px solid var(--color-accent);
     background-color: none;
     cursor: pointer;
 
@@ -225,19 +229,53 @@ footer {
     max-height: 80%;
 }
 
-.flex-container > .about-downloads {
+.flex-container > .about-download {
     padding-top: 0;
-    width: 33%;
     vertical-align: top;
     align-items: center;
 }
-.document-preview {
+
+.download-preview-container {
     transition: border 0.5s ease;
-    padding: 0;
-    margin: 0;
     border: 0.2em solid var(--color-surface);
-    max-width: 100%;
+    margin-bottom: 2em;
 }
+.download-preview {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.download-preview:hover > img {
+    opacity: 1;
+}
+.download-preview:hover > .preview-overlay {
+    opacity: 0;
+}
+.download-preview > img {
+    position: relative;
+    transition: opacity 0.1s ease;
+    max-width: 100%;
+    display: block;
+    opacity: 0.25;
+}
+
+.preview-overlay {
+    transition: opacity 0.1s ease;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--color-text-primary);
+}
+.preview-overlay > span {
+    margin: 0 auto;
+    line-height: 100%;
+    font-size: 2em;
+}
+
 .main-download {
     display: block;
     margin: 0 auto;
