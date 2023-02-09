@@ -8,58 +8,72 @@ const THEME_FILE_LIGHT = "css/theme-light.css";
 const ICON_NAME_DARK = "dark_mode";
 const ICON_NAME_LIGHT = "light_mode";
 
-// MAIN FUNCTION
-
 document.addEventListener("DOMContentLoaded", function () {
     makeThemeToggle();
 });
 
 // add functionality to theme toggle button
 function makeThemeToggle() {
+    var currTheme = localStorage.getItem("data-theme");
+
+    // set icon based on starting theme
+    if (currTheme == "dark") {
+        setIcon(ICON_NAME_LIGHT);
+    } else {
+        setIcon(ICON_NAME_DARK);
+    }
+
     // add listener to any/all theme toggle buttons
     var button = document.getElementById("theme-toggle");
 
     // add listener to current button
     button.addEventListener("click", function () {
+        // get current theme and toggle to opposite
+        currTheme = localStorage.getItem("data-theme");
         toggleTheme();
     });
 }
 
 // toggle theme to opposite of current theme
 function toggleTheme() {
-    currTheme = localStorage.getItem("data-theme");
+    var currTheme = localStorage.getItem("data-theme");
 
     if (currTheme == "dark") {
         setTheme("light");
+        setIcon(ICON_NAME_DARK);
     } else {
         setTheme("dark");
+        setIcon(ICON_NAME_LIGHT);
     }
 }
 
 // set theme to given theme
-var setTheme = function (newTheme) {
-    var themeIcon = document.getElementById("theme-icon");
-    var activeTheme = document.getElementById("theme");
+function setTheme(theme) {
+    var themeFile = document.getElementById("theme");
 
-    if (newTheme == "dark") {
-        themeIcon.innerHTML = ICON_NAME_DARK;
-        activeTheme.href = THEME_FILE_DARK;
+    if (theme == "dark") {
+        themeFile.href = THEME_FILE_DARK;
         localStorage.setItem("data-theme", "dark");
     } else {
-        activeTheme.href = THEME_FILE_LIGHT;
-        themeIcon.innerHTML = ICON_NAME_LIGHT;
+        themeFile.href = THEME_FILE_LIGHT;
         localStorage.setItem("data-theme", "light");
     }
-};
+}
+
+// set theme switcher icon
+function setIcon(iconName) {
+    var icon = document.getElementById("theme-icon");
+    icon.innerHTML = iconName
+}
 
 // set initial page theme based on user's store preferred theme
 (function () {
-    var activeTheme = document.getElementById("theme");
+    var themeFile = document.getElementById("theme");
     if (localStorage.getItem('data-theme') === 'dark') {
-        activeTheme.href = THEME_FILE_DARK;
+        themeFile.href = THEME_FILE_DARK;
         localStorage.setItem("data-theme", "dark");
     } else {
-        activeTheme.href = THEME_FILE_LIGHT;
+        themeFile.href = THEME_FILE_LIGHT;
         localStorage.setItem("data-theme", "light");
     }
 })();
