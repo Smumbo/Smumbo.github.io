@@ -9,7 +9,6 @@ const THEME_FILE_LIGHT = "css/theme-light.css";
 document.addEventListener("DOMContentLoaded", function () {
     makeThemeToggle();
     //makeFooterColorIcons();
-    // generateContactArea();
 });
 
 function copyText(text) {
