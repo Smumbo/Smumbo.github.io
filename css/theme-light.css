@@ -1,6 +1,6 @@
 :root {
     color-scheme: light;
-    
+
     --color-accent: #8d6708;
     --color-text-primary: #181818;
     --color-text-secondary: #4e4e4e;
@@ -11,8 +11,21 @@
 
 #theme-toggle {
     transform: scale(-1, 1);
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+#social-container-github {
+    color: #292d32;
+}
+.icon-logo-github {
+    color: #ffffff;
+}
+#social-container-handshake {
+    color: #052326;
+}
+.icon-logo-handshake {
+    color: #d3fb52;
 }
