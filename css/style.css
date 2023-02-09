@@ -209,6 +209,7 @@ footer {
 }
 
 .footer-credits {
+    transition: color 0.5s ease;
     margin-top: 1.2em;
 
     font-size: 1em;
