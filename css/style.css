@@ -1,5 +1,9 @@
 /* GENERAL STYLES */
 
+:root {
+    --content-max-width: 1140px;
+}
+
 * {
     transition: background-color 0.5s ease;
 
@@ -41,12 +45,8 @@ h6 {
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
 }
-h1,
-h2 {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-
-    text-align: center;
+h1 {
+    font-size: 48px;
 }
 
 p {
@@ -76,8 +76,11 @@ main {
 
     overflow: auto;
 
+
     margin: auto;
-    max-width: 1280px;
+    margin-top: 5em;
+    max-width: var(--content-max-width);
+    width: 100%;
 }
 
 hr {
@@ -111,25 +114,79 @@ footer {
 
 /* REUSABLE STYLES */
 
-.center-text {
-    text-align: center;
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: var(--color-nav);
+    height: 3em;
+    width: 100%;
+    z-index: 100;
+}
+
+.topnav-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--content-max-width);
+}
+
+.topnav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-right: auto;
+}
+
+.topnav-button {
+    height: 100%;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.topnav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    color: var(--color-text-primary);
+}
+
+.topnav-link {
+    text-decoration: none
+}
+.topnav-link:hover {
+    transition: color 0.1s;
+    color: var(--color-accent);
+}
+
+.topnav-active,
+.topnav-active:visited {
+    color: var(--color-accent);
+}
+
+#topnav-logo {
+    color: var(--color-accent);
+    font-size: 2em;
 }
 
 #theme-toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    margin: 0.2em;
     border: none;
-    width: 1em;
-    height: 1em;
-
     background-color: transparent;
     cursor: pointer;
-
-    font-size: 3em;
+    float: right;
+    font-size: 2em;
     color: var(--color-text-primary);
+}
+
+.center-text {
+    text-align: center;
 }
 
 .flex-container {
@@ -245,7 +302,6 @@ footer {
 }
 
 /* PAGE-SPECIFIC STYLES */
-
 #about-portrait {
     width: 40%;
 }

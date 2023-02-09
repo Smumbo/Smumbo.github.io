@@ -7,14 +7,7 @@
     --color-text-tertiary: #acacac;
     --color-background: #ffffff;
     --color-surface: #f2f2f2;
-}
-
-#theme-toggle {
-    transform: scale(-1, 1);
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
+    --color-nav: #f2f2f2;
 }
 
 #social-container-github {
