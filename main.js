@@ -69,11 +69,10 @@ function setIcon(iconName) {
 // set initial page theme based on user's store preferred theme
 (function () {
     var themeFile = document.getElementById("theme");
-    if (localStorage.getItem('data-theme') === 'dark') {
+    var currTheme = localStorage.getItem("data-theme");
+    if (currTheme === 'dark') {
         themeFile.href = THEME_FILE_DARK;
-        localStorage.setItem("data-theme", "dark");
     } else {
         themeFile.href = THEME_FILE_LIGHT;
-        localStorage.setItem("data-theme", "light");
     }
 })();
