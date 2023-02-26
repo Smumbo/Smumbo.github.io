@@ -1,9 +1,13 @@
-/* GENERAL STYLES */
+/*
+ * || GENERAL STYLES
+ */
 
+/* Global variables */
 :root {
     --content-max-width: 1140px;
 }
 
+/* Global styles */
 * {
     transition: background-color 0.5s ease;
 
@@ -15,7 +19,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 html,
 body {
     height: 100%;
@@ -31,6 +34,7 @@ body {
     color: var(--color-text-primary);
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -45,9 +49,10 @@ h6 {
     font-weight: bold;
 }
 h1 {
-    font-size: 48px;
+    font-size: 3em;
 }
 
+/* Body text */
 p {
     transition: color 0.5s ease;
 
@@ -56,7 +61,6 @@ p {
 
     font-size: 1.1em;
 }
-
 a {
     font-size: 1.1em;
 }
@@ -64,24 +68,22 @@ a:link,
 a:visited {
     color: var(--color-text-secondary);
 }
-
 a,
 i {
     transition: color 0.5s ease;
 }
 
+/* Other HTML tags */
 main {
     flex: 1 0 auto;
 
     overflow: auto;
-
 
     margin: auto;
     margin-top: 5em;
     max-width: var(--content-max-width);
     width: 100%;
 }
-
 hr {
     margin: auto;
     margin-top: 3em;
@@ -92,7 +94,6 @@ hr {
 
     background-color: var(--color-text-tertiary);
 }
-
 figcaption {
     margin-top: 1em;
     font-size: 1em;
@@ -101,7 +102,6 @@ figcaption {
     color: var(--color-text-secondary);
     text-align: center;
 }
-
 footer {
     margin-top: 2em;
     padding: 1em;
@@ -111,8 +111,21 @@ footer {
     text-align: center;
 }
 
-/* REUSABLE STYLES */
 
+/*
+ * || SITEWIDE CLASSES
+ */
+
+
+/* Text style */
+.text-bold {
+    font-weight: bold;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+/* Top navigation structure */
 .topnav {
     display: flex;
     flex-direction: row;
@@ -124,7 +137,6 @@ footer {
     width: 100%;
     z-index: 100;
 }
-
 .topnav-center {
     display: flex;
     flex-direction: row;
@@ -133,7 +145,6 @@ footer {
     width: 100%;
     max-width: var(--content-max-width);
 }
-
 .topnav-left {
     display: flex;
     flex-direction: row;
@@ -141,13 +152,6 @@ footer {
     align-items: center;
     margin-right: auto;
 }
-
-.topnav-button {
-    height: 100%;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-}
-
 .topnav-right {
     display: flex;
     flex-direction: row;
@@ -157,6 +161,12 @@ footer {
     color: var(--color-text-primary);
 }
 
+/* Top navigation elements */
+.topnav-button {
+    height: 100%;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
 a.topnav-link {
     transition: color 0.1s;
     color: var(--color-text-secondary);
@@ -166,19 +176,16 @@ a.topnav-link:hover {
     transition: color 0.1s;
     color: var(--color-accent);
 }
-
 .topnav-active,
 .topnav-active:visited {
     color: var(--color-accent);
 }
-
 #topnav-logo {
     color: var(--color-accent);
     padding-left: 0.75em;
     font-size: 2em;
 }
-
-#theme-toggle {
+.theme-toggle-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -187,10 +194,7 @@ a.topnav-link:hover {
     color: var(--color-text-primary);
 }
 
-.center-text {
-    text-align: center;
-}
-
+/* Content container */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -200,6 +204,7 @@ a.topnav-link:hover {
     padding: 2.5em;
 }
 
+/* Social media icons */
 .social-icons {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -217,6 +222,7 @@ a.topnav-link:hover {
     position: relative;
     display: inline-block;
 }
+/* Certain logo colors are set in the dark/light theme stylesheets */
 #social-container-linkedin {
     color: #0077b5;
 }
@@ -224,7 +230,6 @@ a.topnav-link:hover {
     color: #fa5c5c;
 }
 .social-logo {
-    display: flex;
     position: absolute;
     top: 31%;
     left: 30%;
@@ -247,6 +252,7 @@ a.topnav-link:hover {
     font-size: 45%;
 }
 
+/* Download buttons */
 .button-download {
     transition: background-color 0.1s, color 0.1s;
     padding: 1em;
@@ -266,7 +272,13 @@ a.topnav-link:hover {
     background-color: var(--color-accent);
     color: var(--color-background) !important;
 }
+.main-download {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
+/* Footer */
 .footer-credits {
     transition: color 0.5s ease;
     margin-top: 1.2em;
@@ -276,7 +288,6 @@ a.topnav-link:hover {
 }
 .footer-color {
     font-size: 1.2em;
-    /* cursor: pointer; */
 }
 #color1 {
     color: var(--color-accent);
@@ -301,83 +312,4 @@ a.topnav-link:hover {
     text-shadow: 2px 0 0 var(--color-text-tertiary),
         0 -2px 0 var(--color-text-tertiary), 0 2px 0 var(--color-text-tertiary),
         -2px 0 0 var(--color-text-tertiary);
-}
-
-/* PAGE-SPECIFIC STYLES */
-#about-portrait {
-    width: 40%;
-}
-#about-intro {
-    border-left: 2px solid var(--color-accent);
-    width: 60%;
-}
-#portrait {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    filter: saturate(0%) contrast(130%);
-    -webkit-filter: saturate(0%) contrast(130%);
-    -moz-filter: saturate(0%) contrast(130%);
-
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.flex-container > .about-download {
-    padding-top: 0;
-    vertical-align: top;
-    align-items: center;
-    min-width: 33.33%;
-}
-
-.download-preview-container {
-    transition: border 0.5s ease;
-    border: 2px solid var(--color-surface);
-    margin-bottom: 2em;
-}
-
-.download-preview {
-    position: relative;
-    display: block;
-}
-.download-preview:hover > img {
-    opacity: 1;
-}
-.download-preview:hover > .preview-overlay {
-    opacity: 0;
-}
-.download-preview > img {
-    position: relative;
-    max-width: 100%;
-    display: block;
-    opacity: 0.25;
-}
-.download-preview > * {
-    transition: opacity 0.2s ease;
-}
-
-.preview-overlay {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: var(--color-text-primary);
-}
-.preview-overlay > p {
-    margin: 0 auto;
-    line-height: 100%;
-    font-size: 2em;
-}
-
-.main-download {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
 }

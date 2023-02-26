@@ -8,6 +8,17 @@ const THEME_FILE_LIGHT = "css/theme-light.css";
 const ICON_NAME_DARK = "dark_mode";
 const ICON_NAME_LIGHT = "light_mode";
 
+// set initial page theme based on user's store preferred theme
+(function () {
+    var themeFile = document.getElementById("theme");
+    var currTheme = localStorage.getItem("data-theme");
+    if (currTheme === 'dark') {
+        themeFile.href = THEME_FILE_DARK;
+    } else {
+        themeFile.href = THEME_FILE_LIGHT;
+    }
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
     makeThemeToggle();
 });
@@ -24,14 +35,17 @@ function makeThemeToggle() {
     }
 
     // add listener to any/all theme toggle buttons
-    var button = document.getElementById("theme-toggle");
+    var buttons = document.getElementsByClassName("theme-toggle");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', buttonEvent, false);
+    }
+}
 
-    // add listener to current button
-    button.addEventListener("click", function () {
-        // get current theme and toggle to opposite
-        currTheme = localStorage.getItem("data-theme");
-        toggleTheme();
-    });
+// button event
+function buttonEvent() {
+    // get current theme and toggle to opposite
+    currTheme = localStorage.getItem("data-theme");
+    toggleTheme();
 }
 
 // toggle theme to opposite of current theme
@@ -65,14 +79,3 @@ function setIcon(iconName) {
     var icon = document.getElementById("theme-icon");
     icon.innerHTML = iconName
 }
-
-// set initial page theme based on user's store preferred theme
-(function () {
-    var themeFile = document.getElementById("theme");
-    var currTheme = localStorage.getItem("data-theme");
-    if (currTheme === 'dark') {
-        themeFile.href = THEME_FILE_DARK;
-    } else {
-        themeFile.href = THEME_FILE_LIGHT;
-    }
-})();
