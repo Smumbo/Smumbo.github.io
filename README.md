@@ -1,3 +1,3 @@
-# Smumbo.github.io
+# [Smumbo.github.io](smumbo.github.io)
 
 My personal website/portfolio
