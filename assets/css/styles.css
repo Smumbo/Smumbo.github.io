@@ -1,0 +1,10 @@
+* {
+    transition: background-color .5s;
+}
+
+.bi {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    display: block !important;
+}
